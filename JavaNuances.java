@@ -9,22 +9,6 @@ class JavaNuances {
 		// systemArrayCopyPractice(); 
 		// copyOfRangePractice();
 		// primArraysAsGeneric();
-		sortWithComparator();
-	}
-
-	public static void sortWithComparator() { 
-		Integer[] x = new Integer[]{1,2,3,4,5,6,7,8,9};
-		Arrays.sort(x, new Comparator<Integer>() {
-			@Override
-			public int compare(Integer o1, Integer o2) { 
-				if(o1 > o2) return -1;
-				else if( o1 == o2) return 0;
-				else return 1;
-			}
-		});
-		System.out.println(Arrays.toString(x));
-		Arrays.sort(x, 3, 7);
-		System.out.println(Arrays.toString(x));
 	}
 
 	public static void parseIntRadix() { 
